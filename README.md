@@ -15,22 +15,21 @@ Terraform will pick up the GCP project name from the environment variable.
 ```bash
 export GOOGLE_CLOUD_PROJECT=<PROJECT-ID>
 ```
-After that, let's get Terraform started. Run the following to pull in the providers.
+
+After that, let's get Terraform started. Run the following to pull in the providers:
 
 ```terraform
 terraform init
 ```
 
-Create the resources mentioned in main.tf using the following command
+Create the resources mentioned in main.tf using the following commands:
 
 ```terraform
 terraform plan -out workstations.plan
 terraform apply "workstations.plan"
 ```
 
-Terraform will show you what it plans to do, and prompt you to accept. Type "yes" to accept the plan.
-
-Use the following command to destroy the resources
+Use the following command to destroy the resources:
 
 ```terraform
 terraform destroy
